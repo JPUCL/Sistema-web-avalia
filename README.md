@@ -11,12 +11,16 @@ Este é um sistema web desenvolvido para facilitar processos de avaliação.
 ```
 Sistema-web-avalia/
 ├── README.md
-└── .gitignore
+├── .gitignore
+└── index.html
 ```
 
 ## Como Usar
 
-Instruções de uso serão adicionadas conforme o desenvolvimento do sistema.
+1. Abra o arquivo `index.html` em seu navegador web
+2. O sistema está em desenvolvimento e novas funcionalidades serão adicionadas
+
+Instruções adicionais serão fornecidas conforme o desenvolvimento do sistema.
 
 ## Contribuindo
 
