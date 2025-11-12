@@ -1,0 +1,23 @@
+Uma plataforma de troca de telefones onde os usuários podem cadastrar seus dispositivos, 
+visualizar ofertas de troca, receber recomendações e ser notificados sobre novas oportunidades.
+
+Componentes Principais:
+API Gateway: Expondo endpoints para o frontend.
+SQS: Filas para desacoplamento e processamento assíncrono.
+Lambda Functions: Funções responsáveis pelo processamento de dados (ex: cadastrar telefone, recomendar troca, calcular distância).
+DynamoDB: Banco de dados NoSQL para armazenar dados dos usuários, telefones e trocas.
+SNS: Envia notificações por SMS.
+
+Como Funciona?
+Usuário cadastra telefone ou consulta ofertas.
+API Gateway recebe requisições e as envia para a fila SQS.
+Fila SQS armazena e processa as requisições de forma assíncrona.
+
+Funções Lambda:
+Cadastrar Telefone: Registra no banco.
+Ver Ofertas: Consulta as ofertas de troca.
+Recomendar Troca: Gera recomendações baseadas em dados do usuário.
+Calcular Distância: Calcula a distância geográfica entre os usuários.
+Notificação: Envia notificações via SNS.
+SNS: Envia as notificações aos usuários (SMS, push ou e-mail).
+
